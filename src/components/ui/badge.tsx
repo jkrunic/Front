@@ -20,7 +20,7 @@ const badgeVariants = cva(
         warning:
           "border-transparent bg-amber-100 text-amber-800",
         info:
-          "border-transparent bg-blue-100 text-blue-800",
+          "border-transparent bg-indigo-100 text-indigo-800",
       },
     },
     defaultVariants: {

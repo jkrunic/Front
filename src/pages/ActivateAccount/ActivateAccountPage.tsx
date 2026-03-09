@@ -30,7 +30,7 @@ function getPasswordStrength(password: string): number {
 function getStrengthInfo(score: number) {
   if (score < 40) return { label: 'Slaba', color: 'bg-red-500' };
   if (score < 60) return { label: 'Osrednja', color: 'bg-amber-500' };
-  if (score < 80) return { label: 'Dobra', color: 'bg-blue-500' };
+  if (score < 80) return { label: 'Dobra', color: 'bg-indigo-500' };
   return { label: 'Jaka', color: 'bg-emerald-500' };
 }
 
@@ -81,7 +81,7 @@ export default function ActivateAccountPage() {
 
   if (!token) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4">
+      <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-950 via-indigo-900 to-indigo-950 p-4">
         <Card className="w-full max-w-[440px] shadow-xl">
           <CardContent className="p-6 text-center">
             <Alert variant="destructive">
@@ -96,7 +96,7 @@ export default function ActivateAccountPage() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4">
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-950 via-indigo-900 to-indigo-950 p-4">
       <Card className="w-full max-w-[480px] shadow-xl">
         <CardHeader className="text-center space-y-2">
           <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
